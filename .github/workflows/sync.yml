@@ -1,9 +1,8 @@
 name: Sync Fork
 
 on:
-  push: # push 时触发, 主要是为了测试配置有没有问题
   schedule:
-    - cron: '* */3 * * *' # 每3小时触发, 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
+    - cron: '* */5 * * *' # 每3小时触发, 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
 jobs:
   repo-sync:
     name: Test
@@ -24,7 +23,7 @@ jobs:
       id: in3Hours
       run: |
         export hourAgo=$(git show --pretty=format:"%cr" | grep "hour" | head -n 1 | tr -cd "[0-9]")
-        echo "::set-output name=in3Hours::$(test $hourAgo -gt 3;echo $?)"
+        echo "::set-output name=in3Hours::$(test $hourAgo -gt 5;echo $?)"
     - name: Get Newest File
       id: lastestFile
       if: ${{ steps.in3Hours.outputs.in3Hours == 1 }} 
