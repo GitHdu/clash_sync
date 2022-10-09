@@ -1,0 +1,56 @@
+name: Sync Fork
+
+on:
+  push: # push 时触发, 主要是为了测试配置有没有问题
+  schedule:
+    - cron: '* */3 * * *' # 每3小时触发, 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
+jobs:
+  repo-sync:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.3.4
+    - name: GitHub Repo Sync
+      uses: repo-sync/github-sync@v2.3.0
+      with:
+        source_repo: https://github.com/ggborr/aweikeji
+        source_branch: main
+        destination_branch: aweikeji
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/checkout@v2.3.4
+      with:
+        ref: aweikeji
+    - name: Judge Time
+      id: in3Hours
+      run: |
+        export hourAgo=$(git show --pretty=format:"%cr" | grep "hour" | head -n 1 | tr -cd "[0-9]")
+        echo "::set-output name=in3Hours::$(test $hourAgo -gt 3;echo $?)"
+    - name: Get Newest File
+      id: lastestFile
+      if: ${{ steps.in3Hours.outputs.in3Hours == 1 }} 
+      run: |
+        export lastestfile="$(ls -l | awk '{print $9}' | grep -e "keji$" | sort -n |tail -n 1)"
+        echo "::set-output name=lastestFile::$lastestfile"
+    - uses: actions/checkout@v2.3.4
+      with:
+        ref: main
+    - name: Move files
+      id: gitStatus
+      if: ${{ steps.lastestFile.outputs.lastestFile }}
+      run: |
+          git checkout origin/aweikeji ${{ steps.lastestFile.outputs.lastestFile }}
+          mv ${{ steps.lastestFile.outputs.lastestFile }} clash_auto
+          git rm ${{ steps.lastestFile.outputs.lastestFile }}
+          git add clash_auto
+          echo "::set-output name=gitStatus::$(git status -s)"
+    - name: Commit files
+      if: ${{ steps.gitStatus.outputs.gitStatus }}
+      run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -am "Update Clash Auto" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
