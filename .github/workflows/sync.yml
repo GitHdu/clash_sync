@@ -1,11 +1,11 @@
-name: Sync Fork
+name: Sync Others
 
 on:
   schedule:
     - cron: '* */5 * * *' # 每3小时触发, 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
 jobs:
   repo-sync:
-    name: Test
+    name: Sync Others
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.3.4
@@ -26,7 +26,7 @@ jobs:
         echo "::set-output name=in5Hours::$hourAgo"
     - name: Get Newest File
       id: lastestFile
-      if: ${{ steps.in3Hours.outputs.in3Hours }} 
+      if: ${{ steps.in5Hours.outputs.in5Hours }} 
       run: |
         export lastestfile="$(ls -l | awk '{print $9}' | grep -e "keji$" | sort -n |tail -n 1)"
         echo "::set-output name=lastestFile::$lastestfile"
