@@ -24,12 +24,14 @@ jobs:
       run: |
         export hourAgo=$(git show --pretty=format:"%cr" | head -n 1 | awk '{if($2=="hours" && $1<=5) print($1);else if($2!="days") print($1)}')
         echo "::set-output name=in5Hours::$hourAgo"
+        echo $hourAgo
     - name: Get Newest File
       id: lastestFile
       if: ${{ steps.in5Hours.outputs.in5Hours }} 
       run: |
         export lastestfile="$(ls -l | awk '{print $9}' | grep -e "keji$" | sort -n |tail -n 1)"
         echo "::set-output name=lastestFile::$lastestfile"
+        echo $lastestfile
     - uses: actions/checkout@v2.3.4
       with:
         ref: main
@@ -42,6 +44,7 @@ jobs:
           git rm ${{ steps.lastestFile.outputs.lastestFile }}
           git add clash_auto
           echo "::set-output name=gitStatus::$(git status -s)"
+          echo $(git status -s)
     - name: Commit files
       if: ${{ steps.gitStatus.outputs.gitStatus }}
       run: |
