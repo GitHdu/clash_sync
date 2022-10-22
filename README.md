@@ -1,5 +1,5 @@
 # clash_sync
-Change clash config  to one config path.
+Move config to same file, simple to subscribe.
 
 Url contains:
 https://github.com/ggborr/aweikeji
