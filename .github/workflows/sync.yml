@@ -10,20 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.5.0
-    - name: Sync Awikeji
-      uses: repo-sync/github-sync@v2.3.0
-      with:
-        source_repo: https://github.com/ggborr/aweikeji
-        source_branch: main
-        destination_branch: aweikeji
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Sync TopFreeProxies
-      uses: repo-sync/github-sync@v2.3.0
-      with:
-        source_repo: https://github.com/alanbobs999/TopFreeProxies
-        source_branch: master
-        destination_branch: TopFreeProxies
-        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Create Command
       run: |
          cat > moveProxiesToSync.sh <<- EOF
@@ -52,7 +38,12 @@ jobs:
     - name: Merge files
       id: gitStatus
       run: |
+          git remote add aweikeji "https://github.com/ggborr/aweikeji"
           git fetch origin aweikeji --depth=2
+          
+          git remote add TopFreeProxies "https://github.com/alanbobs999/TopFreeProxies"
+          git fetch origin TopFreeProxies --depth=2
+          
           aweikejiFile=$( git diff --name-only --diff-filter=AMT awikeji~1 aweikeji | xargs -I{} -- git log -1 --format="%ci {}" {} | sort | tail -1 | cut -d " " -f4)
           git checkout origin/aweikeji $aweikejiFile
           git checkout origin/TopFreeProxies "Eternity.yaml"
