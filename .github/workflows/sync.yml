@@ -10,57 +10,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.5.0
-    - name: Create Command
-      run: |
-         cat > moveProxiesToSync.sh <<- EOF
-            moveProxiesToSync() {
-              proxies=()
-              begin=0
-              while read -r line; do
-                if [[ \$begin == 1 ]]; then
-                  if [[ \$line =~ "^[ ]*-.*$" ]]; then
-                    proxies+=("\$line")
-                  else
-                    break;
-                  fi
-                fi
-                if [[ \$line == "proxies:" ]]; then
-                  begin=1
-                fi
-              done < \$1
-
-              for proxy in "\${proxies[@]}"; do
-                echo \$proxy >> \$2
-              done
-            }
-          EOF
-          source ./moveProxiesToSync.sh
     - name: Merge files
       id: gitStatus
       run: |
+          source ./moveProxiesToSync.sh
           git remote add aweikeji "https://github.com/ggborr/aweikeji"
-          git fetch origin aweikeji --depth=2
-          
+          git fetch aweikeji --depth=2
+
           git remote add TopFreeProxies "https://github.com/alanbobs999/TopFreeProxies"
-          git fetch origin TopFreeProxies --depth=2
+          git fetch TopFreeProxies --depth=2
           
-          aweikejiFile=$( git diff --name-only --diff-filter=AMT awikeji~1 aweikeji | xargs -I{} -- git log -1 --format="%ci {}" {} | sort | tail -1 | cut -d " " -f4)
-          git checkout origin/aweikeji $aweikejiFile
-          git checkout origin/TopFreeProxies "Eternity.yaml"
+          aweikejiFile=$( git diff --name-only --diff-filter=AMT aweikeji/main~1 aweikeji/main  | xargs -I{} -- git log -1  --remotes="aweikeji"  --format="%ci {}" -- {} | sort | tail -1 | cut -d " " -f4)
           
-          echo > "proxies:"
-          moveProxiesToSync $aweikejiFile clash_auto
+          git checkout aweikeji/main "$aweikejiFile"
+          git checkout TopFreeProxies/master "Eternity.yaml"
+          
+          echo "proxies:" > clash_auto 
+          moveProxiesToSync "$aweikejiFile" clash_auto
           moveProxiesToSync "Eternity.yaml" clash_auto
           
-          git rm $aweikejiFile
-          git rm "Eternity.yaml" 
+          git rm -rf "$aweikejiFile"
+          git rm -rf "Eternity.yaml" 
           
           git add clash_auto
           gitStatus="$(git status -s)"
           echo "hadChanged=${#gitStatus}" >> $GITHUB_OUTPUT
-          echo $gitStatus
     - name: Commit files
-      if: ${{ steps.gitStatus.outputs.hadChanged }}
+      if: ${{ steps.gitStatus.outputs.hadChanged != 0 }}
       run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
