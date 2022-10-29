@@ -27,7 +27,8 @@ jobs:
           
           rm -rf merge*
     - name: Add files
-      id: gitStatus    
+      id: gitStatus   
+      run: |
           git add clash_auto
           gitStatus="$(git status -s)"
           echo "hadChanged=${#gitStatus}" >> $GITHUB_OUTPUT
