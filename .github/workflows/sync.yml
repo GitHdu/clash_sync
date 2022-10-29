@@ -10,13 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.5.0
-    - name: Merge files
-      id: gitStatus
+    - name: getRemoteFiles
       run: |
           source ./.github/func.sh
           getRemoteFile "https://github.com/ggborr/aweikeji" main
           getRemoteFile "https://github.com/alanbobs999/TopFreeProxies" master "Eternity.yaml"
-          
+    - name: Merge files
+      run: |
+          source ./.github/func.sh
           echo "proxies:" > clash_auto 
           mergeFiles=(`ls merge*`)
           for mergeFile in "${mergeFiles[@]}"; do
@@ -25,7 +26,8 @@ jobs:
           done
           
           rm -rf merge*
-          
+    - name: Add files
+      id: gitStatus    
           git add clash_auto
           gitStatus="$(git status -s)"
           echo "hadChanged=${#gitStatus}" >> $GITHUB_OUTPUT
