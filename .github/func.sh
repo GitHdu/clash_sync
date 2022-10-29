@@ -9,7 +9,7 @@ getRemoteFile(){
       fileName=$(git diff --name-only --diff-filter=AMT "$repositoryName"/"$branchName"~1 "$repositoryName"/"$branchName"  | xargs -I{} -- git log -1  --remotes="$repositoryName"  --format="%ci {}" -- {} | sort | tail -1 | cut -d " " -f4)
    fi
    
-   git log -1  --remotes="$repositoryName" -- $fileName
+   git diff --name-only --diff-filter=AMT "$repositoryName"/"$branchName"~1 "$repositoryName"/"$branchName" | tail -1
    if [[ -z $fileName ]]; then
       return
    fi
