@@ -8,7 +8,12 @@ getRemoteFile(){
    if [[ -z $fileName ]]; then
       fileName=$(git diff --name-only --diff-filter=AMT "$repositoryName"/"$branchName"~1 "$repositoryName"/"$branchName"  | xargs -I{} -- git log -1  --remotes="$repositoryName"  --format="%ci {}" -- {} | sort | tail -1 | cut -d " " -f4)
    fi
-  
+   
+   git diff --name-only --diff-filter=AMT "$repositoryName"/"$branchName"~1 "$repositoryName"/"$branchName" 
+   git diff --name-only --diff-filter=AMT "$repositoryName"/"$branchName"~1 "$repositoryName"/"$branchName"  | xargs -I{} -- git log -1  --remotes="$repositoryName"  --format="%ci {}" -- {}
+   if [[ -z $fileName ]]; then
+      exit 1
+   fi
    echo "file--" $fileNamee
    git checkout $repositoryName/$branchName "$fileName"
    mv $fileName merge_$fileName
