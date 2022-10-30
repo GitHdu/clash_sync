@@ -2,6 +2,7 @@ getRemoteFile(){
    repositoryUrl=$1
    branchName=$2
    fileName=$3
+   type=${4:-ready}
    repositoryName=${repositoryUrl##*/}
    git remote add "$repositoryName" "$repositoryUrl"
    git fetch $repositoryName --depth=3
@@ -15,7 +16,13 @@ getRemoteFile(){
    fi
    echo "file--" $fileName
    git checkout $repositoryName/$branchName "$fileName"
-   mv $fileName merge_$fileName
+   
+   if [[ "$type" == "base64" ]]; then
+      cat $fileName | base64 -d > url_$fileName
+   else 
+      mv $fileName ${type}_$fileName
+   fi
+   
    git rm -rf "$fileName"
 }
 
@@ -38,4 +45,10 @@ moveProxiesToSync() {
   for proxy in "${proxies[@]}"; do
     echo $proxy >> "$2"
   done
+}
+
+urlEncode() {
+ text=$(cat $1)
+ result=$(python3 -c "import urllib.request, sys; print(urllib.request.quote(sys.argv[1]))" "$text")
+ echo "$result"| sed "s/\//%2F/g" | sed "s/%0A/%20%20%7C/g" 
 }
