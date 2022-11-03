@@ -19,11 +19,11 @@ jobs:
       run: |
           source ./.github/func.sh
           docker run -d --restart=always -p 25500:25500 tindy2013/subconverter:latest
-        
+          docker ps
           urlFiles=(`ls url*`)
           for urlFile in "${urlFiles[@]}"; do
             echo $urlFile
-            curl -o ready_$urlFile "http://localhost:25500/sub?target=clash&url=$(urlEncode $urlFile)"
+            curl -o ready_$urlFile "http://127.0.0.1:25500/sub?target=clash&url=$(urlEncode $urlFile)"
             rm $urlFile
           done
     - name: MergeReadyFiles
