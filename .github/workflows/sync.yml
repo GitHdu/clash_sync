@@ -10,21 +10,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.5.0
-    - name: getRemoteFiles
+    - name: GetRemoteFiles
       run: |
           source ./.github/func.sh
           getRemoteFile "https://github.com/ggborr/aweikeji" main
           getRemoteFile "https://github.com/freefq/free" master "v2" base64
-    - name: Merge files
+    - name: ConvertUrlToClash
       run: |
-          source ./.github/func.sh
-          
+          docker run -d --restart=always -p 25500:25500 tindy2013/subconverter:latest
+        
           urlFiles=(`ls url*`)
           for urlFile in "${urlFiles[@]}"; do
             echo $urlFile
-            curl -o ready_$urlFile "https://api.v1.mk/sub?target=clash&url=$(urlEncode $urlFile)"
+            curl -o ready_$urlFile "http://localhost:25500/sub?target=clash&url=$(urlEncode $urlFile)"
             rm $urlFile
           done
+    - name: MergeReadyFiles
+      run: |
+          source ./.github/func.sh
           
           echo "proxies:" > clash_auto 
           readyFiles=(`ls ready*`)
