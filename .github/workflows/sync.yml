@@ -23,7 +23,7 @@ jobs:
           urlFiles=(`ls url*`)
           for urlFile in "${urlFiles[@]}"; do
             echo $urlFile
-            curl -o ready_$urlFile "http://127.0.0.1:2550/sub?target=clash&url=$(urlEncode $urlFile)"
+            curl -v -o ready_$urlFile "http://127.0.0.1:2550/sub?target=clash&url=$(urlEncode $urlFile)"
             rm $urlFile
           done
     - name: MergeReadyFiles
