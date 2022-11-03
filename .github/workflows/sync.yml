@@ -17,6 +17,7 @@ jobs:
           getRemoteFile "https://github.com/freefq/free" master "v2" base64
     - name: ConvertUrlToClash
       run: |
+          source ./.github/func.sh
           docker run -d --restart=always -p 25500:25500 tindy2013/subconverter:latest
         
           urlFiles=(`ls url*`)
