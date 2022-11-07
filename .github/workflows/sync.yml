@@ -20,6 +20,7 @@ jobs:
           source ./.github/func.sh
           docker run -d -p 2550:25500 tindy2013/subconverter:latest
           docker ps
+          sleep 5
           urlFiles=(`ls url*`)
           for urlFile in "${urlFiles[@]}"; do
             echo $urlFile
