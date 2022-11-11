@@ -7,10 +7,10 @@ getRemoteFile(){
    git remote add "$repositoryName" "$repositoryUrl"
    git fetch $repositoryName --depth=3
    if [[ -z $fileName ]]; then
-      fileName=$(git diff --name-only --diff-filter=AMT "$repositoryName"/"$branchName"~2 "$repositoryName"/"$branchName"  | xargs -I{} -- git log -1  --remotes="$repositoryName"  --format="%ci {}" -- {} | sort | tail -1 | cut -d " " -f4)
+      fileName=$(git diff --name-only --diff-filter=AMTR "$repositoryName"/"$branchName"~2 "$repositoryName"/"$branchName"  | xargs -I{} -- git log -1  --remotes="$repositoryName"  --format="%ci {}" -- {} | sort | tail -1 | cut -d " " -f4)
    fi
    
-   git diff --name-only --diff-filter=AMT "$repositoryName"/"$branchName"~1 "$repositoryName"/"$branchName" | tail -1
+   git diff --name-only --diff-filter=AMTR "$repositoryName"/"$branchName"~1 "$repositoryName"/"$branchName" | tail -1
    if [[ -z $fileName ]]; then
       return
    fi
