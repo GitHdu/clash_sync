@@ -1,95 +1,27 @@
 proxies:
-- {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: true, udp: true}
+- {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
 - {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZRYSly2IRuFlgpZCaep3Ey3DDXqTDczO04aeC8F36OjaYSCABnA573wN8xxK9S, sni: httah.freetrade.link, skip-cert-verify: true, udp: true}
-- {name: MO 3 → openitsub.com, server: 45.64.22.41, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, sni: jgw2.gaox.ml, skip-cert-verify: true, udp: true}
+- {name: MO 3 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: true, udp: true}
 - {name: MO 4 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
-- {name: MO 5 → openitsub.com, server: 45.64.22.41, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, sni: trs09.bolab.net, skip-cert-verify: true, udp: true}
-- {name: MO 6 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
+- {name: MO 5 → openitsub.com, server: 45.64.22.41, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, sni: jgw2.gaox.ml, skip-cert-verify: true, udp: true}
 - {name: VN 1 → openitsub.com, server: 103.81.85.238, port: 443, type: trojan, password: b874173c-dfc6-40f4-9542-d973997f9659, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
 - {name: 🇨🇳 TW 1 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 HK 1 → openitsub.com, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 HK 2 → openitsub.com, server: 219.76.13.181, port: 443, type: trojan, password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ, sni: arbettp.freetrade.link, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 HK 3 → openitsub.com, server: kr.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 HK 4 → openitsub.com, server: dl-hk3.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 HK 5 → openitsub.com, server: dl-hk4.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 HK 6 → openitsub.com, server: dl-hk1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 HK 1 → openitsub.com, server: dl-hk1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 HK 2 → openitsub.com, server: dl-hk4.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 HK 3 → openitsub.com, server: dl-hk3.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
 - {name: 🇯🇵 JP 1 → openitsub.com, server: dl-jp1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-jp.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 1 → openitsub.com, server: hkt.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 10 → openitsub.com, server: dl-am2.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-cl.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 11 → openitsub.com, server: dl-hkcmi1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 12 → openitsub.com, server: dl-jp4.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-jp.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 13 → openitsub.com, server: dl-sg2.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 14 → openitsub.com, server: dl-sg4.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 15 → openitsub.com, server: dl-kr2.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-ockrcc.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 16 → openitsub.com, server: dl-sg1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 17 → openitsub.com, server: dl-sg3.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 18 → openitsub.com, server: dl-hkcmi2.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 19 → openitsub.com, server: core1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-ru.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 2 → openitsub.com, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 20 → openitsub.com, server: sg.555199.xyz, port: 443, type: trojan, password: c44d9a62-be2d-4afb-a3b8-e8dd82e6b127, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 3 → openitsub.com, server: vn.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 4 → openitsub.com, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 5 → openitsub.com, server: usla.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 6 → openitsub.com, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 7 → openitsub.com, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 US 8 → openitsub.com, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 1 → openitsub.com, server: dl-jp4.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-jp.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 10 → openitsub.com, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 11 → openitsub.com, server: dl-am2.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-cl.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 12 → openitsub.com, server: core1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-ru.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 2 → openitsub.com, server: dl-hk2.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 3 → openitsub.com, server: dl-hkcmi1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 4 → openitsub.com, server: dl-sg3.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 5 → openitsub.com, server: dl-sg2.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 6 → openitsub.com, server: dl-sg4.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 7 → openitsub.com, server: dl-sg1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US 8 → openitsub.com, server: dl-hkcmi2.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
 - {name: 🇺🇸 US 9 → openitsub.com, server: dl-kr1.efpan.one, port: 443, type: trojan, password: d9b2cf79-d655-448c-9f41-4b6a8c7bc62a, sni: data-ockrsl.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港特区01专线5x, server: 20.212.35.155, port: 443, type: trojan, password: cc4e5c66-d9d4-4d98-a935-796e6b81e4e6, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港特区02专线5x, server: 20.212.204.112, port: 443, type: trojan, password: cc4e5c66-d9d4-4d98-a935-796e6b81e4e6, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港特区03专线5x, server: 20.239.94.179, port: 443, type: trojan, password: cc4e5c66-d9d4-4d98-a935-796e6b81e4e6, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港特区04专线5x, server: 20.239.165.34, port: 443, type: trojan, password: cc4e5c66-d9d4-4d98-a935-796e6b81e4e6, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港特区05专线5x, server: 20.239.198.103, port: 443, type: trojan, password: cc4e5c66-d9d4-4d98-a935-796e6b81e4e6, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港特区06专线5x, server: 20.239.94.179, port: 443, type: trojan, password: cc4e5c66-d9d4-4d98-a935-796e6b81e4e6, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港HGC, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 50098c6e-db84-48dc-8b9e-7d7899b87921, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/freecloud/hkhgc?ed=2048", headers: {Host: hkhgc.guolicheng.cyou}}, udp: true}
-- {name: 香港HGC-IEPL, server: 223.111.202.209, port: 38080, type: vmess, uuid: 50098c6e-db84-48dc-8b9e-7d7899b87921, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /freecloud/hkhgc, headers: {Host: i0.hdslb.com}}, udp: true}
-- {name: 日本AZ | IEPL, server: 20.210.237.81, port: 443, type: trojan, password: 50098c6e-db84-48dc-8b9e-7d7899b87921, sni: freecloud.windowsupdate1.com, skip-cert-verify: true, udp: true}
-- {name: 美国圣何塞, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 50098c6e-db84-48dc-8b9e-7d7899b87921, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/freecloud/us2?ed=2048", headers: {Host: us2.guolicheng.cyou}}, udp: true}
-- {name: 距离下次重置剩余：2 天, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 50098c6e-db84-48dc-8b9e-7d7899b87921, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/freecloud/us1?ed=2048", headers: {Host: us1.guolicheng.cyou}}, udp: true}
-- {name: Lil 香港05 | IEPL | 倍率:1.5, server: sql.accessconnect.cc, port: 2105, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: Lil 香港08 | IEPL | 倍率:1.5, server: sql.accessconnect.cc, port: 2108, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: Lil 香港07 | IEPL | 倍率:1.5, server: sql.accessconnect.cc, port: 2107, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: Lil 香港10 | IEPL | 倍率:1.6, server: sql.accessconnect.cc, port: 2110, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: Lil 香港12 | IEPL | 倍率:3, server: sql.accessconnect.cc, port: 2112, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: Lil 香港09 | IEPL | 倍率:1.6, server: sql.accessconnect.cc, port: 2109, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: Lil 香港03 | IEPL | 倍率:1.6, server: sql.accessconnect.cc, port: 2103, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: Lil 韩国04 | IEPL | 倍率:2, server: sql.accessconnect.cc, port: 2506, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: Lil 日本02 | IEPL | 倍率:1.3, server: sql.accessconnect.cc, port: 2602, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: Lil 日本05 | IEPL | 倍率:1.3, server: sql.accessconnect.cc, port: 2605, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 230821:5aK0tX, obfs-param: e17e4230821.www.gov.h, udp: true}
-- {name: vm 临时订阅 香港1, server: 154.3.37.64, port: 15025, type: vmess, uuid: 550c05e1-d3e6-4c80-bd3c-0be2afc4f3e2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-- {name: vm 临时订阅 香港2, server: 103.135.248.9, port: 15025, type: vmess, uuid: 66bab7f9-9cbf-47ef-9631-de81d1ccf56d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-- {name: 美国纽约私人订制专线, server: fnhk1000snews008.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: 3c88ec132b66, udp: true}
-- {name: 香港 05, server: dl-hkcmi1.efpan.one, port: 443, type: trojan, password: 1ff598ff-807d-4a9e-acf5-03e20155c135, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港 06, server: dl-hkcmi2.efpan.one, port: 443, type: trojan, password: 1ff598ff-807d-4a9e-acf5-03e20155c135, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港跨境金融专线02, server: fnhk1000new009.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: 47b484a2f3eb, udp: true}
-- {name: 新加坡 01, server: dl-sg1.efpan.one, port: 443, type: trojan, password: 1ff598ff-807d-4a9e-acf5-03e20155c135, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 新加坡 03, server: dl-sg3.efpan.one, port: 443, type: trojan, password: 1ff598ff-807d-4a9e-acf5-03e20155c135, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip4, server: 101.226.23.85, port: 19201, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip10, server: 180.102.30.72, port: 19205, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip9, server: 222.84.250.35, port: 19242, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港HGC-dip15, server: 222.84.250.35, port: 19242, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 新加坡 02, server: dl-sg2.efpan.one, port: 443, type: trojan, password: 1ff598ff-807d-4a9e-acf5-03e20155c135, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 新加坡1 不扣流量, server: 20.212.35.155, port: 443, type: trojan, password: 1ff598ff-807d-4a9e-acf5-03e20155c135, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 新加坡2 不扣流量, server: 20.212.204.112, port: 443, type: trojan, password: 1ff598ff-807d-4a9e-acf5-03e20155c135, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港 03, server: dl-hk3.efpan.one, port: 443, type: trojan, password: 1ff598ff-807d-4a9e-acf5-03e20155c135, sni: data-hk.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip14, server: 222.84.250.35, port: 19221, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港跨境金融专线01, server: exkkdx600mtwlines008.fnline.me, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: c9022610bd94, udp: true}
-- {name: 香港IEPL内网专线04, server: mktw600mline005.kuainiaojs.club, port: 465, type: ss, cipher: chacha20-ietf-poly1305, password: 91b2a9da9867, udp: true}
-- {name: 香港有线-dip13, server: 182.151.8.150, port: 19202, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip18, server: 222.84.250.35, port: 19211, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip15, server: 101.226.23.85, port: 19216, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港IEPL内网专线02, server: fn600mliness016.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: b82344b3d531, udp: true}
-- {name: 新加坡 04, server: dl-sg4.efpan.one, port: 443, type: trojan, password: 1ff598ff-807d-4a9e-acf5-03e20155c135, sni: data-sg.efpan.one, skip-cert-verify: true, udp: true}
-- {name: 香港HGC-dip12, server: 222.84.250.35, port: 19225, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 调试, server: "[2607:f130:0:103::72f9:6485]", port: 65512, type: vmess, uuid: 941dc916-cabb-40a0-cb33-9f9b22c6b796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 香港HGC-dip5, server: 222.84.250.35, port: 19201, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip8, server: 222.84.250.35, port: 19214, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip11, server: 182.151.8.150, port: 19204, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip3, server: 180.102.30.72, port: 19204, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip16, server: 101.226.23.85, port: 19226, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip12, server: 223.111.202.178, port: 19203, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港HGC-dip7, server: 222.84.250.35, port: 19214, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip7, server: 182.151.8.150, port: 19203, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
-- {name: 香港有线-dip1, server: 222.84.250.35, port: 19201, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: true, udp: true}
 - {name: github.com/freefq - 上海市联通 1, server: a16m.jpl.cdn.01.njser.xyz, port: 22102, type: vmess, uuid: 849a9495-5af5-4e54-bff5-1ab670eaebea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a16m.jpl.cdn.01.njser.xyz}}, udp: true}
 - {name: github.com/freefq - 香港Microsoft数据中心 2, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, skip-cert-verify: true, udp: true}
 - {name: github.com/freefq - 日本东京Choopa数据中心 3, server: jp1.a100.sbs, port: 2001, type: vmess, uuid: c69a52c2-4673-4637-87e4-a0603c920f50, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
