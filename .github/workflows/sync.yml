@@ -15,6 +15,7 @@ jobs:
           source ./.github/func.sh
           getRemoteFile "https://github.com/yu-steven/openit" main "Clash.yaml"
           getRemoteFile "https://github.com/freefq/free" master "v2" base64
+          getRemoteFile "https://github.com/Jsnzkpg/Jsnzkpg" Jsnzkpg "Jsnzkpg" base64
     - name: ConvertUrlToClash
       run: |
           source ./.github/func.sh
