@@ -1,8 +1,7 @@
 proxies:
-- {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
-- {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
-- {name: 🇨🇳 TW 1 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-- {name: 🇨🇳 TW 2 → openitsub.com, server: 211.72.35.157, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
+- {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
+- {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
+- {name: MO 3 → openitsub.com, server: 45.64.22.41, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, sni: jgw2.gaox.ml, skip-cert-verify: true, udp: true}
 - {name: 🇺🇸 US 1 → openitsub.com, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
 - {name: github.com/freefq - 德国巴伐利亚州纽伦堡Hetzner数据中心 1, server: 195.201.24.247, port: 80, type: vmess, uuid: 4c3fb737-de59-4b78-a66f-5f4f039252a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
 - {name: github.com/freefq - 日本东京都品川区Linode数据中心 2, server: f1f3227.v3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: options.teams.microsoft.com, network: ws, ws-opts: {path: /, headers: {Host: options.teams.microsoft.com}}, udp: true}
