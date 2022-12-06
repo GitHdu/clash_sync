@@ -1,6 +1,12 @@
 proxies:
 - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
-- {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
+- {name: MO 2 → openitsub.com, server: 45.64.22.41, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, sni: trs09.bolab.net, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 1 → openitsub.com, server: 211.72.35.157, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 2 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 3 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: 26a663656e575c0b, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 4 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 26a663656e575c0b, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 5 → openitsub.com, server: 211.72.35.157, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 6 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
 - {name: 🇺🇸 US 1 → openitsub.com, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
 - {name: github.com/freefq - 美国Microsoft数据中心 1, server: hk11.sanfen001.pics, port: 443, type: vmess, uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk11.sanfen001.pics}}, udp: true}
 - {name: github.com/freefq - 台湾省中华电信(HiNet)数据中心 2, server: tw99-hinet.mynodes001.one, port: 445, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
