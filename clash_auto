@@ -2,10 +2,16 @@ proxies:
 - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
 - {name: MO 2 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
 - {name: MO 3 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: true, udp: true}
-- {name: MO 4 → openitsub.com, server: 45.64.22.41, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, sni: trs09.bolab.net, skip-cert-verify: true, udp: true}
-- {name: 🇨🇳 TW 1 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
-- {name: 🇨🇳 TW 2 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
-- {name: 🇨🇳 TW 3 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 1 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 2 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 3 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 4 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 5 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 6 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 7 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 8 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+- {name: 🇨🇳 TW 9 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 HK 1 → openitsub.com, server: 219.76.13.181, port: 443, type: trojan, password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ, sni: arbettp.freetrade.link, skip-cert-verify: true, udp: true}
 - {name: 🇺🇸 US 1 → openitsub.com, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
 - {name: github.com/freefq - 台湾省中华电信(HiNet)数据中心 1, server: tw99-hinet.mynodes001.one, port: 445, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - {name: github.com/freefq - 澳大利亚Lyndhurst Secondary College 2, server: 203.30.188.189, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
