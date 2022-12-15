@@ -50,7 +50,7 @@ for current_url in home_urls:
 print(f'{times} accounts created for each site. Subscription URLs:\n----------')
 print(*subs, sep='\n')
 
-with open('subs.txt', 'w') as fil:
+with open('ready_subs.text', 'w') as fil:
     for sub in subs :
       try:
           response = requests.get(sub, timeout=20)
