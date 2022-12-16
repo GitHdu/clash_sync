@@ -28,6 +28,14 @@ jobs:
     - name: ConvertUrlToClash
       run: |
           source ./.github/func.sh
+          
+          urlFiles=(`ls base64*`)
+          for urlFile in "${urlFiles[@]}"; do
+            echo $urlFile
+            cat $fileName | base64 -d > url_$fileName
+            rm $urlFile
+          done
+          
           docker run -d -p 2550:25500 tindy2013/subconverter:latest
           docker ps
           sleep 5
