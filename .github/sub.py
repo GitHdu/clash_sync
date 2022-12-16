@@ -50,12 +50,15 @@ for current_url in home_urls:
 print(f'{times} accounts created for each site. Subscription URLs:\n----------')
 print(*subs, sep='\n')
 
-with open('ready_subs.text', 'w') as fil:
-    for sub in subs :
-      try:
-          response = requests.get(sub, timeout=20)
-          print(response.text, sep='\n', file=fil)
-      except Exception as e:
-          print(e.args)
-          continue
+ind = 0
+for sub in subs :
+  i += 1 
+  try:
+      response = requests.get(sub, timeout=20)
+      print(response.text)
+      with open('base64_subs_' + ind, 'w') as fil:
+        print(response.text, sep='\n', file=fil)
+  except Exception as e:
+      print(e.args)
+      continue
     
