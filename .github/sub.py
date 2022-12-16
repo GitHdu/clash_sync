@@ -50,7 +50,7 @@ print(*subs, sep='\n')
 
 ind = 0
 for sub in subs :
-  i += 1 
+  ind += 1 
   try:
       response = requests.get(sub, timeout=20)
       print(len(response.text))
