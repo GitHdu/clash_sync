@@ -17,12 +17,7 @@ getRemoteFile(){
    echo "file--" $fileName
    git checkout $repositoryName/$branchName "$fileName"
    
-   if [[ "$type" == "base64" ]]; then
-      cat $fileName | base64 -d > url_$fileName
-   else 
-      mv $fileName ${type}_$fileName
-   fi
-   
+   mv $fileName ${type}_$fileName
    git rm -rf "$fileName"
 }
 
