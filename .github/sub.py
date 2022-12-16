@@ -53,9 +53,9 @@ for sub in subs :
   i += 1 
   try:
       response = requests.get(sub, timeout=20)
-      print(response.text)
-      with open('base64_subs_' + ind, 'w') as fil:
-        print(response.text, sep='\n', file=fil)
+      print(len(response.text))
+      with open('base64_subs_' + str(ind), 'w') as f:
+        print(response.text, sep='\n', file=f)
   except Exception as e:
       print(e.args)
       continue
