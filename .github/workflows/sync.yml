@@ -3,7 +3,7 @@ name: Sync Others
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */12 * * *'
 jobs:
   repo-sync:
     name: Sync Others
@@ -32,7 +32,7 @@ jobs:
           urlFiles=(`ls base64*`)
           for urlFile in "${urlFiles[@]}"; do
             echo $urlFile
-            cat $fileName | base64 -d > url_$fileName
+            cat $urlFile | base64 -d > url_$urlFile
             rm $urlFile
           done
           
