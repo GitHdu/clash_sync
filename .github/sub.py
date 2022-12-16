@@ -8,9 +8,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 home_urls = (
     'https://user.bafang.vip',
-    'https://cloud.hhygj.xyz',
-    'https://xingbayun.top',
-    'https://console.ly520.me'
+    'https://cloud.hhygj.xyz'
 )
 times = 2
 
